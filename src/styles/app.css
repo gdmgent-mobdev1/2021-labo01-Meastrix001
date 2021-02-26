@@ -1,0 +1,25 @@
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--body-background-color);
+    color: var(--primary-text-color);
+}
+
+#app {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.text-container {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 36px;
+}
