@@ -10,16 +10,49 @@
 body {
     background: var(--body-background-color);
     color: var(--primary-text-color);
+		height: 100vh;
 }
-
-#app {
+p{
+	font-size: 2rem;
+}
+.wrapper{
+	max-width: 100rem;
+	margin: auto;
+}
+.quiz-area {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
 }
 
 .text-container {
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 36px;
+}
+form select,
+form input,
+form button{
+	width: 12rem;
+	height: 3rem;
+	font-size: 2rem;
+	margin-right: 4rem;
+	/* background-color: transparent; */	
+}
+form button{
+	background-color: blue;
+	color: white;
+}
+form {
+	display: flex;
+	margin: auto;
+	width: fit-content;
+	align-items: baseline;
+	margin-top: 5rem;
+}
+form section{
+	display: flex;
+	flex-direction: column;
+}
+.preQuiz-header{
+	display: flex;
 }

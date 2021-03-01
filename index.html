@@ -7,7 +7,49 @@
   <title></title>
 </head>
 <body>
-  <div id="app"></div>
+  <!-- <div id="app"></div> -->
+  <div class="preQuiz-header wrapper">
+    <form id="quiz-filter" action="submit">
+      <section>
+      <Label for="filter_catergory" > catergory</Label>
+      <select name="category" id="filter_catergory" class="catergory">
+        <option value="">Random</option>
+        <option selected value="Linux">Linux</option>
+        <option value="DevOps">DevOps</option>
+        <option value="Networking">Networking</option>
+        <option value="Programming">Programming</option>
+        <option value="cloud">cloud</option>
+        <option value="Kuberneetes">Kuberneetes</option>
+      </select>
+    </section>
+    <section>
+      <Label for="filter_difficulty" > difficulty</Label>
+      <select name="difficulty" id="filter_difficulty" class="difficulty">
+        <option value="">Random</option>
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+      </select>
+    </section>
+    <section>
+      <Label for="filter_tags" >tags</Label>
+      <input class="tags" id="filter_tags"></input>
+    </section>
+    <section>
+      <Label for="filter_amount" >amount</Label>
+      <input class="amount" id="filter_amount"></input>
+    </section>
+      <button id="form" type="submit">Create Quiz!</button>
+    </form>
+    <div class="counter">
+    </div>
+  </div>
+  <div class="quiz-area wrapper">
+    <ul id="quiz-questions">
+    </ul>
+    <ul id="quiz-answers"></ul>
+  </div>
+  <button id="test">NEXT</button>
   <script type="module" src="./src/app.js"></script>
 </body>
 </html>
