@@ -116,8 +116,8 @@ import {
     async fetchQuizzAPI() {
       //example URL
       // https://quizapi.io/api/v1/questions?apiKey=YOUR_API_KEY&category=linux&difficulty=Easy&limit=10&tags=HTML,JavaScript
-      // console.log(`${QUIZZ_API}?apiKey=${QUIZZ_TOKEN}&category=${this.$quizCategory.value}&difficulty=${this.$quizDifficulty.value}&limit=${this.$quizAmount.value}`)
-      await fetch(`${QUIZZ_API}?apiKey=${QUIZZ_TOKEN}&category=${this.$quizCategory.value}&difficulty=${this.$quizDifficulty.value}&limit=${this.$quizAmount.value}`)
+      console.log(`${QUIZZ_API}?apiKey=${QUIZZ_TOKEN}&category=${this.$quizCategory.value}&difficulty=${this.$quizDifficulty.value}&limit=${this.$quizAmount.value}`)
+      await fetch(`${QUIZZ_API}?apiKey=${QUIZZ_TOKEN}&category=${this.$quizCategory.value}&difficulty=${this.$quizDifficulty.value}&limit=${this.$quizAmount.value}%tags=${this.$quizTags.value}`)
         .then(response => response.json())
         .then(json => {
           console.log(json)
