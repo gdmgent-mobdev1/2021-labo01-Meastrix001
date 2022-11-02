@@ -7,7 +7,55 @@
   <title></title>
 </head>
 <body>
-  <div id="app"></div>
+  <!-- <div id="app"></div> -->
+  <div class="quiz-body">
+  <div class="preQuiz-header wrapper">
+    <form id="quiz-filter" action="submit">
+      <section>
+      <Label for="filter_catergory" > catergory</Label>
+      <select name="category" id="filter_catergory" class="catergory filter container">
+      </select>
+    </section>
+    <section>
+      <Label for="filter_difficulty" > difficulty</Label>
+      <select name="difficulty" id="filter_difficulty" class="difficulty filter container">
+      </select>
+    </section>
+    <section>
+      <Label for="filter_tags" >tags</Label>
+      <input class="tags filter container" id="filter_tags"></input>
+    </section>
+    <section>
+      <Label for="filter_amount" >amount</Label>
+      <input class="amount filter container" id="filter_amount"></input>
+    </section>
+    <section>
+    </section>
+  </form>
+  <button class="quiz_start container" id="form" type="submit">Create Quiz!</button>
+</div>
+<div class="counter clear">
+</div>
+  <div class="quiz-area wrapper">
+    <ul class="quiz-questions clear">
+    </ul>
+    <div class="answerList clear">
+    </div>
+    <ul class="quiz-answers clear">
+    </ul>
+  </div>
+  <div class="wrapper class button-center">
+  <button class="nextQuestion container">NEXT</button>
+  <button class="restart-quiz container">New Quiz</button>
+  <button class="skipQuestion container">SKIP</button>
+</div>
+</div>
+<div class="results wrapper">
+  <ul class="results-list clear">
+    
+  </ul>
+  <button class="restart-quiz-end container">New Quiz</button>
+</div>
   <script type="module" src="./src/app.js"></script>
 </body>
 </html>

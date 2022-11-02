@@ -1,7 +1,6 @@
-# Basic Starter Template
+# Quiz
 
-This is an easy way to start your JavaScript application. Start by changing the code in `./src/app.js`.
+little quiz app
+## Nick Roofthooft
 
-## Author
-
-This application was created by [YOUR NAME].
+This application was created by Nick Roofthooft as a project for Arteveldehogeschool.

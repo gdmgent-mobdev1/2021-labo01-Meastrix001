@@ -10,16 +10,163 @@
 body {
     background: var(--body-background-color);
     color: var(--primary-text-color);
+		height: 100vh;
 }
-
-#app {
+p{
+	font-size: 2rem;
+}
+li{
+	list-style: none;
+}
+h2{
+	margin: 0;
+	font-size: 2rem;
+	color: white;
+}
+h3{
+	margin: 0;
+	font-size: 1.4rem;
+}
+.wrapper{
+	max-width: 100rem;
+	margin: auto;
+	padding: 0rem 2rem
+}
+.filter{
+	background-blend-mode: soft-light;
+}
+.container{
+	margin-top: 2rem;
+	background-color: blue;
+	opacity: 50%;
+    border: none;
+    border-radius: 50px;
+		font-weight: bold;
+		box-sizing: content-box;
+		padding: 1rem;
+	color: white;
+	cursor: pointer;
+}
+.quiz-area {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
+	flex-direction: column;
 }
 
 .text-container {
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 36px;
+}
+form select,
+form input
+{
+	
+	width: 12rem;
+	height: 3rem;
+	font-size: 2rem;
+	/* background-color: transparent; */	
+}
+section{
+	margin: 2rem 2rem;
+}
+.active{
+	background-color: red;
+}
+form {
+	display: flex;
+	margin: auto;
+	width: fit-content;
+	align-items: baseline;
+	margin-top: 5rem;
+}
+form section{
+	display: flex;
+	flex-direction: column;
+}
+.preQuiz-header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.counter{
+	width: fit-content;
+	margin: auto;
+}
+.quiz_start{
+	margin-top: 5rem;
+	background-color: blue;
+	color: white;
+}
+.quiz-answers{
+	height: fit-content;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 5rem;
+}
+.answer_card{
+	width: 40%;
+	list-style: none;
+	text-align: center;
+	font-size: 2rem;
+	border-radius: 80px;
+	margin-bottom: 2rem;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.answerList{
+	display: flex;
+	flex-wrap: wrap;
+}
+.answerList h2{
+	margin: 0.5rem 0.5rem;
+}
+.answer_card h3{
+	background-color: gold;
+	border-radius: 80px;
+	padding: 0.5rem;
+	color: black;
+}
+.skipQuestion,
+.restart-quiz,
+.nextQuestion,
+.quiz_start{
+width: fit-content;
+display: table-cell;
+align-self: center;
+font-size: 2rem;
+}
+
+.quiz-questions{
+	width: 100%;
+	text-align: center;
+	background-color: blue;
+	border-radius: 80px;
+}
+.quiz-questions p{
+	color: white;
+}
+.quiz-body{
+	margin-top: 5rem;
+}
+select,
+input{
+		color: black;
+}
+label{
+	width: fit-content;
+	margin: auto;
+	font-size: 2rem;
+}
+.button-center{
+	display: flex;
+	justify-content: center;
+}
+.button-center button{
+	margin: 6rem 1rem 1rem 1rem;
 }
